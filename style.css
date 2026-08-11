@@ -91,8 +91,31 @@ button{font:inherit}
 .lightbox-close{position:absolute;right:25px;top:15px;background:none;border:0;color:#fff;font-size:42px;cursor:pointer}
 
 /* WHATSAPP */
-.floating-whatsapp{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#b98232;color:#fff;font-size:24px;z-index:40;box-shadow:0 8px 22px rgba(75,52,39,.25);transition:.25s}
-.floating-whatsapp:hover{transform:scale(1.06)}
+.floating-whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#25D366;
+  color:#fff;
+  z-index:40;
+  box-shadow:0 6px 18px rgba(0,0,0,.22);
+  transition:.25s;
+}
+
+.floating-whatsapp svg{
+  width:34px;
+  height:34px;
+  fill:currentColor;
+}
+
+.floating-whatsapp:hover{
+  transform:scale(1.08);
+}
 
 /* RESPONSIVO */
 @media(max-width:900px){
