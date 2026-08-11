@@ -85,10 +85,61 @@ button{font:inherit}
 .footer span{font-size:12px;opacity:.8}
 
 /* LIGHTBOX */
-.lightbox{position:fixed;inset:0;background:rgba(35,24,18,.88);display:none;align-items:center;justify-content:center;padding:30px;z-index:100}
-.lightbox.open{display:flex}
-.lightbox img{max-width:min(900px,92vw);max-height:88vh;border-radius:12px;object-fit:contain}
-.lightbox-close{position:absolute;right:25px;top:15px;background:none;border:0;color:#fff;font-size:42px;cursor:pointer}
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(35, 24, 18, 0.90);
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  z-index: 9999;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 88vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 12px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.lightbox-close {
+  position: absolute;
+
+  top: 15px;
+  right: 25px;
+
+  border: none;
+  background: transparent;
+
+  color: white;
+
+  font-size: 45px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  z-index: 10000;
+}
+
+.gallery-item {
+  cursor: pointer;
+}
 
 /* WHATSAPP */
 .floating-whatsapp{
