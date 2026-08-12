@@ -34,6 +34,28 @@ button{font:inherit}
 .btn-light{border:1px solid #b98232;color:#8b5c25;background:rgba(255,255,255,.5)}
 
 /* SECTIONS */
+/* REGRAS PARA O MENU NO CELULAR */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Faz o botão de 3 riscos aparecer no celular */
+  }
+
+  .nav {
+    display: none; /* Esconde o menu por padrão */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fdf8f5;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.active {
+    display: flex; /* Exibe os links quando clica no hambúrguer */
+  }
+}
 .section{padding:90px 0}
 .section-heading{text-align:center;max-width:700px;margin:0 auto 48px}
 .section-heading h2,.about-text h2,.contact-box h2{font-family:'Playfair Display',serif;font-size:48px;line-height:1.15;font-weight:500;color:#7c4d20}
