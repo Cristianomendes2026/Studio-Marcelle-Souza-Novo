@@ -37,11 +37,11 @@ button{font:inherit}
 /* REGRAS PARA O MENU NO CELULAR */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block; /* Faz o botão de 3 riscos aparecer no celular */
+    display: block; /* Exibe o botão hambúrguer no celular */
   }
 
   .nav {
-    display: none; /* Esconde o menu por padrão */
+    display: none; /* Esconde a lista de navegação por padrão */
     position: absolute;
     top: 100%;
     left: 0;
@@ -52,8 +52,9 @@ button{font:inherit}
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .nav.active {
-    display: flex; /* Exibe os links quando clica no hambúrguer */
+  .nav.active,
+  .nav.open {
+    display: flex !important; /* Força a exibição dos links quando o menu for ativado */
   }
 }
 .section{padding:90px 0}
